@@ -1,0 +1,21 @@
+#!/usr/bin/env python3.6
+
+import os
+import math
+
+# Get the value of 'DIGITS' 
+# environment variable
+key = 'DIGITS'
+digits = int(os.getenv(key) or 10)
+
+print("%.*f" % (digits, math.pi))
+
+# OR
+
+from os import getenv
+from math import pi
+
+key = 'DIGITS'
+digits = int(getenv(key) or 10)
+
+print("%.*f" % (digits, pi))
