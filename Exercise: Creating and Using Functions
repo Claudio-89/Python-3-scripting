@@ -1,0 +1,15 @@
+#!/usr/bin/env python3.6
+
+message = input("Message: ")
+count = input("Number of repeats (1 by default): ").strip()
+
+if count:
+  count = int(count)
+else:
+  count = 1
+
+def echo_echo(message, count):
+    while count > 0:
+        print(message)
+        count -= 1
+echo_echo(message, count)
